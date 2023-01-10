@@ -1,0 +1,86 @@
+*{
+  padding: 0;
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body{
+  background-color: #111;
+}
+
+@font-face {
+  font-family: 'DigiFont';
+  src: url('./fonts/digital-readout.medium.ttf') format('woff2');
+}
+#canvas {
+  background-color: #44c553;
+  /* border: 1px solid #111; */
+}
+
+.typewriter {
+  justify-content: center;
+  align-items: center;
+  background-color: #333;
+  height:5rem;
+  width: 100%;
+  display: flex;
+}
+
+.typewriter .displayLbl {
+  height: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+  -webkit-text-stroke: 0.5px #999;
+  color: #44c553;
+  -webkit-text-fill-color: #44c553;
+  font-size: 50pt;
+  font-family: 'DigiFont', Fallback, 'Arial';
+}
+
+.typewriter .displayLbl::after {
+  content: '';
+  border-right: 10px #44c553;
+  animation: cursor 4.5s infinite;
+  width: 8px;
+  height: 45px;
+  transform: translateY(10px);
+  background-color: #44c553;
+  position: absolute;
+}
+
+
+@keyframes cursor {
+  0% {
+    opacity: 1;
+  }
+  10% {
+    opacity: 0;
+  }
+  20% {
+    opacity: 1;
+  }
+  30% {
+    opacity: 0;
+  }
+  40% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  60% {
+    opacity: 1;
+  }
+  70% {
+    opacity: 0;
+  }
+  80% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}

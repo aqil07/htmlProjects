@@ -72,7 +72,7 @@ function gameOver() {
   canvas.removeEventListener('keyup', (e) => {
     console.log('removed', e)
   })
-  //reset globals
+  //reset global
   resetGlobals()
 
   let res = prompt('Play agin?', 'yes')
